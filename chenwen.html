@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>index</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	</head>
+	<body>
+		<div class="Divcontent">
+			<div class="login">
+				<p style="font-size: 20px; color: white;">Hello！</p>
+				<input type="text" id="name" placeholder="请输入名字" autofocus style="width: 80px;"/>
+				<br/>
+				<br/>
+				<input type="submit" value="提交" onclick="button()"/>
+			</div>
+		</div>
+	</body>
+	<script>
+		function button(){
+			var name  = document.getElementById('name').value;
+			if (name === "沉稳") {
+				window.location.href = "go.html";
+			}else{
+				alert("No!");
+			}
+		}
+	</script>
+	<style>
+		.Divcontent{
+			width: 100%;
+			height: 980px;
+			background-image:
+				url('/index.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+</html>
