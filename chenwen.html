@@ -10,29 +10,28 @@
 		<div class="Divcontent">
 			<div class="login">
 				<p style="font-size: 20px; color: white;">Hello！</p>
-				<input type="text" id="name" placeholder="请输入名字" autofocus style="width: 80px;"/>
-				<br/>
-				<br/>
-				<input type="submit" value="提交" onclick="button()"/>
+				<input type="text" id="name" placeholder="请输入名字" autofocus style="width: 80px;" />
+				<br />
+				<br />
+				<input type="submit" value="提交" onclick="button()" />
 			</div>
 		</div>
 	</body>
 	<script>
-		function button(){
-			var name  = document.getElementById('name').value;
+		function button() {
+			var name = document.getElementById('name').value;
 			if (name === "沉稳") {
-				window.location.href = "go.html";
-			}else{
+				window.location.href = "./go.html";
+			} else {
 				alert("No!");
 			}
 		}
 	</script>
 	<style>
-		.Divcontent{
+		.Divcontent {
 			width: 100%;
 			height: 980px;
-			background-image:
-				url('/index.jpg');
+			background-image: url(./static/index.jpg);
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 		}
